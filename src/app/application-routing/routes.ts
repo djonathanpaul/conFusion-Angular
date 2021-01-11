@@ -15,6 +15,10 @@ export const routes:Routes=[
 {path:'menu', component:MenuComponent},
 {path:'contactus', component:ContactComponent},
 
+
+//Define a route with a parameter included in the route definition.
+{path:'dishdetail/:id',component:DishdetailComponent},
+
 {path:'', redirectTo:'/home',pathMatch:'full'}
 
 ];

@@ -15,7 +15,7 @@
 
         <mat-grid-list cols="2" rowHeight="200px">
 
-            <mat-grid-tile *ngFor="let dish of dishes" (click)="onSelect(dish)">
+            <mat-grid-tile *ngFor="let dish of dishes" [routerLink]="['/dishdetail',dish.id]">
                 <img heigt="200px"  src={{dish.image}} alt={{dish.name}}>
 
                 <mat-grid-tile-footer>
@@ -27,10 +27,4 @@
         </mat-grid-list>
     </div>
 
-    <app-dishdetail [dishSelected]="selectedDish">
-
-    </app-dishdetail>
-   
-    
-
-</div>
+ </div>
