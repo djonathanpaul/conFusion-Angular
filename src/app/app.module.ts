@@ -6,6 +6,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -30,6 +31,7 @@ import {PromotionService} from './services/promotion.service';
 import {LeaderService} from './services/leader.service';
 
 import {ApplicationRoutingModule} from './application-routing/application-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import {ApplicationRoutingModule} from './application-routing/application-routin
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +54,8 @@ import {ApplicationRoutingModule} from './application-routing/application-routin
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatDialogModule,
+
     ApplicationRoutingModule
   ],
   providers: [
@@ -58,6 +63,11 @@ import {ApplicationRoutingModule} from './application-routing/application-routin
     PromotionService,
     LeaderService
   ],
+
+  entryComponents:[
+    LoginComponent
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
