@@ -14,6 +14,7 @@ export const routes:Routes=[
 {path:'home', component:HomeComponent},
 {path:'menu', component:MenuComponent},
 {path:'contactus', component:ContactComponent},
+{path:'aboutus',component:AboutComponent},
 
 
 //Define a route with a parameter included in the route definition.
