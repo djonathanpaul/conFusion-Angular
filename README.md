@@ -1,3 +1,7 @@
+# What the Project
+
+This project is to showcase what i have learnt in Angular so far. Its a simple single page application that is built using Angular. I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
+
 # ConFusion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
