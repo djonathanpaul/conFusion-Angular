@@ -1,6 +1,6 @@
 # What the Project
 
-This project is to showcase what i have learnt in Angular so far. Its a simple single page application that is built using Angular. I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
+This project is to showcase my technical competency in Angular. Its a simple single page application that I have developed for a restaurant that doesnt exist. I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
 
 # A mock-up of the home page when you run the project
 
