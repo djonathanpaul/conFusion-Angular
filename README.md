@@ -2,6 +2,10 @@
 
 This project is to showcase what i have learnt in Angular so far. Its a simple single page application that is built using Angular. I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
 
+# A mock-up of the home page when you run the project
+
+![](https://github.com/djonathanpaul/conFusion-Angular/blob/main/src/assets/images/Mock-Up%20of%20Home%20Page.PNG)
+
 # ConFusion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
