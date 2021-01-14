@@ -1,6 +1,9 @@
 # What the Project
 
-This project is to showcase my technical competency in Angular. Its a simple single page application that I have developed for a restaurant that doesnt exist. I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
+This project is to showcase my technical competency in Angular. This is a simple web application(SPA) developed for a restuarant that does not exist in the real word. The website consists of 4 main pages which are the Home, About, Menu and Contacts.
+
+# Techstack Used for this project
+I have made use of Angular CLI, Angular Material Design anf Flexy layouts in this project.
 
 # A mock-up of the home page when you run the project
 
