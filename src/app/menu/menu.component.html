@@ -11,7 +11,7 @@
     </div>
 
 
-    <div fxFlex>
+    <div fxFlex *ngIf="dishes">
 
         <mat-grid-list cols="2" rowHeight="200px">
 
@@ -25,6 +25,9 @@
                 </mat-grid-tile-footer>
             </mat-grid-tile>
         </mat-grid-list>
+    </div>
+    <div [hidden]="dishes">
+        <mat-spinner></mat-spinner> <h4>Loading PLease Wait</h4>
     </div>
 
  </div>

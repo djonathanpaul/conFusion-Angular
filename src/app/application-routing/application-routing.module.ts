@@ -11,6 +11,8 @@ import {routes} from './routes';
     CommonModule,
     RouterModule.forRoot(routes)
   ],
+
+  //ensuring the router module can be used by the app module
   exports:[
     RouterModule
   ]

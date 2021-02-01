@@ -10,6 +10,8 @@ import { LoginComponent } from '../login/login.component';
 })
 export class HeaderComponent implements OnInit {
 
+
+  
   constructor(public dialog:MatDialog) { }
 
   ngOnInit(): void {
@@ -17,6 +19,7 @@ export class HeaderComponent implements OnInit {
 
 
   openLoginDialogForm(){
+    //This is where the login html is opened as a dialog. 
     this.dialog.open(LoginComponent,{width: '500px', height: '450px'});
   }
 

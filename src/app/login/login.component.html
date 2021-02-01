@@ -18,6 +18,7 @@
                 [(ngModel)]="user.username" name="username"
                 #username="ngModel" required>
 
+                <!-- .errors to check if there aare any errors and type of error is required-->
                 <mat-error *ngIf="username.errors?.required">Username is required</mat-error>
 
             </mat-form-field>

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+//import { resolve } from 'dns';
 
 import {Dish} from '../shared/dish';
 import {DISHES} from '../shared/dishes';
@@ -10,23 +11,26 @@ export class DishService {
 
   constructor() { }
 
+  getDishes(): Promise<Dish[]>{
+    //Example of resolving immediately 
+    //return Promise.resolve(DISHES);
 
-  getDishes(): Dish[]{
-    return DISHES;
+    return new Promise((resolve)=>{
+      setTimeout(()=> resolve(DISHES),2000);
+    });
   }
 
 
-  getParticularDish(id:string):Dish{
+  getParticularDish(id:string):Promise<Dish>{
+    return new Promise((resolve)=>{
+      setTimeout(()=> resolve(DISHES.filter((d)=> (d.id===id))[0]),2000);
+  });
+}
 
-   return DISHES.filter((d)=> (d.id===id))[0];
-
-  }
-
-  getFeaturedDish():Dish{
-
-    return DISHES.filter((d)=>
-      d.featured
-    )[0];
-  }
+  getFeaturedDish():Promise<Dish>{
+    return new Promise((resolve)=>{
+      setTimeout(()=> resolve( DISHES.filter((d)=> d.featured)[0]),2000);
+  });
+}
 
 }

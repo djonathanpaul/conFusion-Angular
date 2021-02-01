@@ -27,6 +27,7 @@ export class ContactComponent implements OnInit {
 
   createForm(){
     this.feedbackForm = this.fb.group({
+      //The below fields are actually form controls. These are fields on a form in a nutshell.
       firstname: ['',Validators.required],
       lastname: ['',Validators.required],
       telnum: [0,Validators.required],
